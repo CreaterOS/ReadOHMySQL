@@ -1,0 +1,951 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68315AC0238FB42C005D889A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68315ABF238FB42C005D889A /* AppDelegate.m */; };
+		68315AC3238FB42C005D889A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68315AC2238FB42C005D889A /* ViewController.m */; };
+		68315AC6238FB42C005D889A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68315AC4238FB42C005D889A /* Main.storyboard */; };
+		68315AC8238FB42E005D889A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68315AC7238FB42E005D889A /* Assets.xcassets */; };
+		68315ACB238FB42E005D889A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68315AC9238FB42E005D889A /* LaunchScreen.storyboard */; };
+		68315ACE238FB42E005D889A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68315ACD238FB42E005D889A /* main.m */; };
+		68315AD8238FB42E005D889A /* OHMySQLDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68315AD7238FB42E005D889A /* OHMySQLDemoTests.m */; };
+		68315AE3238FB42E005D889A /* OHMySQLDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68315AE2238FB42E005D889A /* OHMySQLDemoUITests.m */; };
+		6841445A24340FE600D14205 /* OHMySQLQueryContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 684143E224340FE600D14205 /* OHMySQLQueryContext.m */; };
+		6841445B24340FE600D14205 /* OHMySQLQueryRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 684143E424340FE600D14205 /* OHMySQLQueryRequestFactory.m */; };
+		6841445C24340FE600D14205 /* OHCharsetEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 684143E724340FE600D14205 /* OHCharsetEncoding.m */; };
+		6841445D24340FE600D14205 /* OHJoinConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 684143E924340FE600D14205 /* OHJoinConstants.m */; };
+		6841445E24340FE600D14205 /* OHSSLConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 684143F824340FE600D14205 /* OHSSLConfig.m */; };
+		6841445F24340FE600D14205 /* OHMySQLStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 684143F924340FE600D14205 /* OHMySQLStore.m */; };
+		6841446024340FE600D14205 /* OHMySQLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 684143FA24340FE600D14205 /* OHMySQLUser.m */; };
+		6841446124340FE600D14205 /* OHMySQLTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 684143FB24340FE600D14205 /* OHMySQLTimeline.m */; };
+		6841446224340FE600D14205 /* OHMySQLQueryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 684143FC24340FE600D14205 /* OHMySQLQueryRequest.m */; };
+		6841446324340FE600D14205 /* OHMySQLContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6841440024340FE600D14205 /* OHMySQLContainer.m */; };
+		6841446424340FE600D14205 /* OHMySQLStoreCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6841440224340FE600D14205 /* OHMySQLStoreCoordinator.m */; };
+		6841446524340FE600D14205 /* client_plugin.h.pp in Sources */ = {isa = PBXBuildFile; fileRef = 6841442724340FE600D14205 /* client_plugin.h.pp */; };
+		6841446624340FE600D14205 /* libmysqlclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6841444924340FE600D14205 /* libmysqlclient.a */; };
+		6841446824340FE600D14205 /* NSString+OHSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 6841444D24340FE600D14205 /* NSString+OHSerialization.m */; };
+		6841446924340FE600D14205 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6841444E24340FE600D14205 /* NSString+Utility.m */; };
+		6841446A24340FE600D14205 /* NSObject+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 6841445224340FE600D14205 /* NSObject+Mapping.m */; };
+		6841446B24340FE600D14205 /* NSString+Escaping.m in Sources */ = {isa = PBXBuildFile; fileRef = 6841445324340FE600D14205 /* NSString+Escaping.m */; };
+		6841446C24340FE600D14205 /* NSData+OHSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 6841445624340FE600D14205 /* NSData+OHSerialization.m */; };
+		6841446D24340FE600D14205 /* NSNumber+OHSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 6841445724340FE600D14205 /* NSNumber+OHSerialization.m */; };
+		6841446E24340FE600D14205 /* OHMySQLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 6841445924340FE600D14205 /* OHMySQLSerialization.m */; };
+		68756B0E238FB95F0030E144 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 68756B0D238FB95E0030E144 /* libc++.tbd */; };
+		68756B11238FBFB40030E144 /* BankDict.m in Sources */ = {isa = PBXBuildFile; fileRef = 68756B10238FBFB40030E144 /* BankDict.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68315AD4238FB42E005D889A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68315AB3238FB42C005D889A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68315ABA238FB42C005D889A;
+			remoteInfo = OHMySQLDemo;
+		};
+		68315ADF238FB42E005D889A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68315AB3238FB42C005D889A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68315ABA238FB42C005D889A;
+			remoteInfo = OHMySQLDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68315ABB238FB42C005D889A /* OHMySQLDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OHMySQLDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68315ABE238FB42C005D889A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		68315ABF238FB42C005D889A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		68315AC1238FB42C005D889A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		68315AC2238FB42C005D889A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		68315AC5238FB42C005D889A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68315AC7238FB42E005D889A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68315ACA238FB42E005D889A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68315ACC238FB42E005D889A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68315ACD238FB42E005D889A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68315AD3238FB42E005D889A /* OHMySQLDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OHMySQLDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68315AD7238FB42E005D889A /* OHMySQLDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHMySQLDemoTests.m; sourceTree = "<group>"; };
+		68315AD9238FB42E005D889A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68315ADE238FB42E005D889A /* OHMySQLDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OHMySQLDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68315AE2238FB42E005D889A /* OHMySQLDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHMySQLDemoUITests.m; sourceTree = "<group>"; };
+		68315AE4238FB42E005D889A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		684143E224340FE600D14205 /* OHMySQLQueryContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHMySQLQueryContext.m; sourceTree = "<group>"; };
+		684143E324340FE600D14205 /* OHMySQLStoreCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHMySQLStoreCoordinator.h; sourceTree = "<group>"; };
+		684143E424340FE600D14205 /* OHMySQLQueryRequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHMySQLQueryRequestFactory.m; sourceTree = "<group>"; };
+		684143E524340FE600D14205 /* OHMySQLContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHMySQLContainer.h; sourceTree = "<group>"; };
+		684143E724340FE600D14205 /* OHCharsetEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHCharsetEncoding.m; sourceTree = "<group>"; };
+		684143E824340FE600D14205 /* OHProtocolType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHProtocolType.h; sourceTree = "<group>"; };
+		684143E924340FE600D14205 /* OHJoinConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHJoinConstants.m; sourceTree = "<group>"; };
+		684143EA24340FE600D14205 /* OHLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHLogging.h; sourceTree = "<group>"; };
+		684143EB24340FE600D14205 /* OHCharsetEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHCharsetEncoding.h; sourceTree = "<group>"; };
+		684143EC24340FE600D14205 /* OHJoinConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHJoinConstants.h; sourceTree = "<group>"; };
+		684143ED24340FE600D14205 /* OHConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHConstants.h; sourceTree = "<group>"; };
+		684143EE24340FE600D14205 /* OHRefreshOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHRefreshOptions.h; sourceTree = "<group>"; };
+		684143EF24340FE600D14205 /* OHResultErrorType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHResultErrorType.h; sourceTree = "<group>"; };
+		684143F024340FE600D14205 /* OHMySQLSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHMySQLSerialization.h; sourceTree = "<group>"; };
+		684143F124340FE600D14205 /* OHSerializationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHSerializationProtocol.h; sourceTree = "<group>"; };
+		684143F324340FE600D14205 /* OHSSLConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHSSLConfig.h; sourceTree = "<group>"; };
+		684143F424340FE600D14205 /* OHMySQLTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHMySQLTimeline.h; sourceTree = "<group>"; };
+		684143F524340FE600D14205 /* OHMySQLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHMySQLUser.h; sourceTree = "<group>"; };
+		684143F624340FE600D14205 /* OHMySQLStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHMySQLStore.h; sourceTree = "<group>"; };
+		684143F724340FE600D14205 /* OHMySQLQueryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHMySQLQueryRequest.h; sourceTree = "<group>"; };
+		684143F824340FE600D14205 /* OHSSLConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHSSLConfig.m; sourceTree = "<group>"; };
+		684143F924340FE600D14205 /* OHMySQLStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHMySQLStore.m; sourceTree = "<group>"; };
+		684143FA24340FE600D14205 /* OHMySQLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHMySQLUser.m; sourceTree = "<group>"; };
+		684143FB24340FE600D14205 /* OHMySQLTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHMySQLTimeline.m; sourceTree = "<group>"; };
+		684143FC24340FE600D14205 /* OHMySQLQueryRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHMySQLQueryRequest.m; sourceTree = "<group>"; };
+		684143FD24340FE600D14205 /* OHMySQLQueryContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHMySQLQueryContext.h; sourceTree = "<group>"; };
+		684143FE24340FE600D14205 /* OHMySQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHMySQL.h; sourceTree = "<group>"; };
+		684143FF24340FE600D14205 /* OHMappingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHMappingProtocol.h; sourceTree = "<group>"; };
+		6841440024340FE600D14205 /* OHMySQLContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHMySQLContainer.m; sourceTree = "<group>"; };
+		6841440124340FE600D14205 /* OHMySQLQueryRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHMySQLQueryRequestFactory.h; sourceTree = "<group>"; };
+		6841440224340FE600D14205 /* OHMySQLStoreCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHMySQLStoreCoordinator.m; sourceTree = "<group>"; };
+		6841440524340FE600D14205 /* mysql_com_server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_com_server.h; sourceTree = "<group>"; };
+		6841440624340FE600D14205 /* byte_order_generic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = byte_order_generic.h; sourceTree = "<group>"; };
+		6841440724340FE600D14205 /* my_command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_command.h; sourceTree = "<group>"; };
+		6841440824340FE600D14205 /* thr_rwlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thr_rwlock.h; sourceTree = "<group>"; };
+		6841440924340FE600D14205 /* my_byteorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_byteorder.h; sourceTree = "<group>"; };
+		6841440A24340FE600D14205 /* my_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_config.h; sourceTree = "<group>"; };
+		6841440B24340FE600D14205 /* my_thread_local.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_thread_local.h; sourceTree = "<group>"; };
+		6841440C24340FE600D14205 /* keycache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keycache.h; sourceTree = "<group>"; };
+		6841440D24340FE600D14205 /* binary_log_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = binary_log_types.h; sourceTree = "<group>"; };
+		6841440E24340FE600D14205 /* mysqld_ername.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysqld_ername.h; sourceTree = "<group>"; };
+		6841440F24340FE600D14205 /* m_ctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = m_ctype.h; sourceTree = "<group>"; };
+		6841441024340FE600D14205 /* big_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = big_endian.h; sourceTree = "<group>"; };
+		6841441124340FE600D14205 /* my_global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_global.h; sourceTree = "<group>"; };
+		6841441224340FE600D14205 /* little_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = little_endian.h; sourceTree = "<group>"; };
+		6841441324340FE600D14205 /* thr_cond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thr_cond.h; sourceTree = "<group>"; };
+		6841441424340FE600D14205 /* mysql_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_version.h; sourceTree = "<group>"; };
+		6841441524340FE600D14205 /* sslopt-vars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sslopt-vars.h"; sourceTree = "<group>"; };
+		6841441624340FE600D14205 /* my_getopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_getopt.h; sourceTree = "<group>"; };
+		6841441724340FE600D14205 /* decimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decimal.h; sourceTree = "<group>"; };
+		6841441824340FE600D14205 /* sslopt-case.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sslopt-case.h"; sourceTree = "<group>"; };
+		6841441924340FE600D14205 /* m_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = m_string.h; sourceTree = "<group>"; };
+		6841441A24340FE600D14205 /* mysql_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_time.h; sourceTree = "<group>"; };
+		6841441B24340FE600D14205 /* my_thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_thread.h; sourceTree = "<group>"; };
+		6841441C24340FE600D14205 /* my_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_list.h; sourceTree = "<group>"; };
+		6841441D24340FE600D14205 /* sslopt-longopts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sslopt-longopts.h"; sourceTree = "<group>"; };
+		6841441E24340FE600D14205 /* typelib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typelib.h; sourceTree = "<group>"; };
+		6841441F24340FE600D14205 /* mysql_com.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_com.h; sourceTree = "<group>"; };
+		6841442124340FE600D14205 /* mysql_lex_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_lex_string.h; sourceTree = "<group>"; };
+		6841442224340FE600D14205 /* service_mysql_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_mysql_alloc.h; sourceTree = "<group>"; };
+		6841442324340FE600D14205 /* plugin_auth_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin_auth_common.h; sourceTree = "<group>"; };
+		6841442424340FE600D14205 /* plugin_trace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin_trace.h; sourceTree = "<group>"; };
+		6841442524340FE600D14205 /* get_password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = get_password.h; sourceTree = "<group>"; };
+		6841442624340FE600D14205 /* service_my_snprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_my_snprintf.h; sourceTree = "<group>"; };
+		6841442724340FE600D14205 /* client_plugin.h.pp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = client_plugin.h.pp; sourceTree = "<group>"; };
+		6841442824340FE600D14205 /* client_plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = client_plugin.h; sourceTree = "<group>"; };
+		6841442A24340FE600D14205 /* mysql_ps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_ps.h; sourceTree = "<group>"; };
+		6841442B24340FE600D14205 /* mysql_transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_transaction.h; sourceTree = "<group>"; };
+		6841442C24340FE600D14205 /* mysql_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_file.h; sourceTree = "<group>"; };
+		6841442D24340FE600D14205 /* mysql_idle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_idle.h; sourceTree = "<group>"; };
+		6841442E24340FE600D14205 /* psi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psi.h; sourceTree = "<group>"; };
+		6841442F24340FE600D14205 /* mysql_stage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_stage.h; sourceTree = "<group>"; };
+		6841443024340FE600D14205 /* mysql_table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_table.h; sourceTree = "<group>"; };
+		6841443124340FE600D14205 /* psi_memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psi_memory.h; sourceTree = "<group>"; };
+		6841443224340FE600D14205 /* psi_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psi_base.h; sourceTree = "<group>"; };
+		6841443324340FE600D14205 /* mysql_socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_socket.h; sourceTree = "<group>"; };
+		6841443424340FE600D14205 /* mysql_sp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_sp.h; sourceTree = "<group>"; };
+		6841443524340FE600D14205 /* mysql_statement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_statement.h; sourceTree = "<group>"; };
+		6841443624340FE600D14205 /* mysql_thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_thread.h; sourceTree = "<group>"; };
+		6841443724340FE600D14205 /* mysql_memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_memory.h; sourceTree = "<group>"; };
+		6841443824340FE600D14205 /* mysql_mdl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_mdl.h; sourceTree = "<group>"; };
+		6841443924340FE600D14205 /* client_authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = client_authentication.h; sourceTree = "<group>"; };
+		6841443A24340FE600D14205 /* my_dir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_dir.h; sourceTree = "<group>"; };
+		6841443B24340FE600D14205 /* thr_mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thr_mutex.h; sourceTree = "<group>"; };
+		6841443C24340FE600D14205 /* mysql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql.h; sourceTree = "<group>"; };
+		6841443D24340FE600D14205 /* my_xml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_xml.h; sourceTree = "<group>"; };
+		6841443E24340FE600D14205 /* sql_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sql_common.h; sourceTree = "<group>"; };
+		6841443F24340FE600D14205 /* my_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_alloc.h; sourceTree = "<group>"; };
+		6841444024340FE600D14205 /* byte_order_generic_x86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = byte_order_generic_x86.h; sourceTree = "<group>"; };
+		6841444124340FE600D14205 /* mysqld_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysqld_error.h; sourceTree = "<group>"; };
+		6841444224340FE600D14205 /* my_compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_compiler.h; sourceTree = "<group>"; };
+		6841444324340FE600D14205 /* my_sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_sys.h; sourceTree = "<group>"; };
+		6841444424340FE600D14205 /* sql_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sql_state.h; sourceTree = "<group>"; };
+		6841444524340FE600D14205 /* my_dbug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_dbug.h; sourceTree = "<group>"; };
+		6841444624340FE600D14205 /* errmsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errmsg.h; sourceTree = "<group>"; };
+		6841444724340FE600D14205 /* mysql_embed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_embed.h; sourceTree = "<group>"; };
+		6841444924340FE600D14205 /* libmysqlclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmysqlclient.a; sourceTree = "<group>"; };
+		6841444B24340FE600D14205 /* libmysqlclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmysqlclient.a; sourceTree = "<group>"; };
+		6841444D24340FE600D14205 /* NSString+OHSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+OHSerialization.m"; sourceTree = "<group>"; };
+		6841444E24340FE600D14205 /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
+		6841444F24340FE600D14205 /* NSString+Escaping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Escaping.h"; sourceTree = "<group>"; };
+		6841445024340FE600D14205 /* NSData+OHSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+OHSerialization.h"; sourceTree = "<group>"; };
+		6841445124340FE600D14205 /* NSNumber+OHSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+OHSerialization.h"; sourceTree = "<group>"; };
+		6841445224340FE600D14205 /* NSObject+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Mapping.m"; sourceTree = "<group>"; };
+		6841445324340FE600D14205 /* NSString+Escaping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Escaping.m"; sourceTree = "<group>"; };
+		6841445424340FE600D14205 /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
+		6841445524340FE600D14205 /* NSString+OHSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+OHSerialization.h"; sourceTree = "<group>"; };
+		6841445624340FE600D14205 /* NSData+OHSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+OHSerialization.m"; sourceTree = "<group>"; };
+		6841445724340FE600D14205 /* NSNumber+OHSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+OHSerialization.m"; sourceTree = "<group>"; };
+		6841445824340FE600D14205 /* NSObject+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Mapping.h"; sourceTree = "<group>"; };
+		6841445924340FE600D14205 /* OHMySQLSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHMySQLSerialization.m; sourceTree = "<group>"; };
+		68756B0D238FB95E0030E144 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		68756B0F238FBFB40030E144 /* BankDict.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankDict.h; sourceTree = "<group>"; };
+		68756B10238FBFB40030E144 /* BankDict.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankDict.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68315AB8238FB42C005D889A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68756B0E238FB95F0030E144 /* libc++.tbd in Frameworks */,
+				6841446624340FE600D14205 /* libmysqlclient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68315AD0238FB42E005D889A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68315ADB238FB42E005D889A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68315AB2238FB42C005D889A = {
+			isa = PBXGroup;
+			children = (
+				68315ABD238FB42C005D889A /* OHMySQLDemo */,
+				68315AD6238FB42E005D889A /* OHMySQLDemoTests */,
+				68315AE1238FB42E005D889A /* OHMySQLDemoUITests */,
+				68315ABC238FB42C005D889A /* Products */,
+				68756B0C238FB95E0030E144 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		68315ABC238FB42C005D889A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68315ABB238FB42C005D889A /* OHMySQLDemo.app */,
+				68315AD3238FB42E005D889A /* OHMySQLDemoTests.xctest */,
+				68315ADE238FB42E005D889A /* OHMySQLDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68315ABD238FB42C005D889A /* OHMySQLDemo */ = {
+			isa = PBXGroup;
+			children = (
+				68315ABE238FB42C005D889A /* AppDelegate.h */,
+				68315ABF238FB42C005D889A /* AppDelegate.m */,
+				68315AC1238FB42C005D889A /* ViewController.h */,
+				68315AC2238FB42C005D889A /* ViewController.m */,
+				684143E124340FE600D14205 /* OHMySQL */,
+				68315AC4238FB42C005D889A /* Main.storyboard */,
+				68315AC7238FB42E005D889A /* Assets.xcassets */,
+				68315AC9238FB42E005D889A /* LaunchScreen.storyboard */,
+				68315ACC238FB42E005D889A /* Info.plist */,
+				68315ACD238FB42E005D889A /* main.m */,
+				68756B0F238FBFB40030E144 /* BankDict.h */,
+				68756B10238FBFB40030E144 /* BankDict.m */,
+			);
+			path = OHMySQLDemo;
+			sourceTree = "<group>";
+		};
+		68315AD6238FB42E005D889A /* OHMySQLDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				68315AD7238FB42E005D889A /* OHMySQLDemoTests.m */,
+				68315AD9238FB42E005D889A /* Info.plist */,
+			);
+			path = OHMySQLDemoTests;
+			sourceTree = "<group>";
+		};
+		68315AE1238FB42E005D889A /* OHMySQLDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				68315AE2238FB42E005D889A /* OHMySQLDemoUITests.m */,
+				68315AE4238FB42E005D889A /* Info.plist */,
+			);
+			path = OHMySQLDemoUITests;
+			sourceTree = "<group>";
+		};
+		684143E124340FE600D14205 /* OHMySQL */ = {
+			isa = PBXGroup;
+			children = (
+				684143E224340FE600D14205 /* OHMySQLQueryContext.m */,
+				684143E324340FE600D14205 /* OHMySQLStoreCoordinator.h */,
+				684143E424340FE600D14205 /* OHMySQLQueryRequestFactory.m */,
+				684143E524340FE600D14205 /* OHMySQLContainer.h */,
+				684143E624340FE600D14205 /* Constants */,
+				684143F024340FE600D14205 /* OHMySQLSerialization.h */,
+				684143F124340FE600D14205 /* OHSerializationProtocol.h */,
+				684143F224340FE600D14205 /* Models */,
+				684143FD24340FE600D14205 /* OHMySQLQueryContext.h */,
+				684143FE24340FE600D14205 /* OHMySQL.h */,
+				684143FF24340FE600D14205 /* OHMappingProtocol.h */,
+				6841440024340FE600D14205 /* OHMySQLContainer.m */,
+				6841440124340FE600D14205 /* OHMySQLQueryRequestFactory.h */,
+				6841440224340FE600D14205 /* OHMySQLStoreCoordinator.m */,
+				6841440324340FE600D14205 /* lib */,
+				6841444C24340FE600D14205 /* Categories */,
+				6841445924340FE600D14205 /* OHMySQLSerialization.m */,
+			);
+			name = OHMySQL;
+			path = "../../../Downloads/OHMySQL-master/OHMySQL";
+			sourceTree = "<group>";
+		};
+		684143E624340FE600D14205 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				684143E724340FE600D14205 /* OHCharsetEncoding.m */,
+				684143E824340FE600D14205 /* OHProtocolType.h */,
+				684143E924340FE600D14205 /* OHJoinConstants.m */,
+				684143EA24340FE600D14205 /* OHLogging.h */,
+				684143EB24340FE600D14205 /* OHCharsetEncoding.h */,
+				684143EC24340FE600D14205 /* OHJoinConstants.h */,
+				684143ED24340FE600D14205 /* OHConstants.h */,
+				684143EE24340FE600D14205 /* OHRefreshOptions.h */,
+				684143EF24340FE600D14205 /* OHResultErrorType.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		684143F224340FE600D14205 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				684143F324340FE600D14205 /* OHSSLConfig.h */,
+				684143F424340FE600D14205 /* OHMySQLTimeline.h */,
+				684143F524340FE600D14205 /* OHMySQLUser.h */,
+				684143F624340FE600D14205 /* OHMySQLStore.h */,
+				684143F724340FE600D14205 /* OHMySQLQueryRequest.h */,
+				684143F824340FE600D14205 /* OHSSLConfig.m */,
+				684143F924340FE600D14205 /* OHMySQLStore.m */,
+				684143FA24340FE600D14205 /* OHMySQLUser.m */,
+				684143FB24340FE600D14205 /* OHMySQLTimeline.m */,
+				684143FC24340FE600D14205 /* OHMySQLQueryRequest.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6841440324340FE600D14205 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				6841440424340FE600D14205 /* include */,
+				6841444824340FE600D14205 /* ios */,
+				6841444A24340FE600D14205 /* mac */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		6841440424340FE600D14205 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				6841440524340FE600D14205 /* mysql_com_server.h */,
+				6841440624340FE600D14205 /* byte_order_generic.h */,
+				6841440724340FE600D14205 /* my_command.h */,
+				6841440824340FE600D14205 /* thr_rwlock.h */,
+				6841440924340FE600D14205 /* my_byteorder.h */,
+				6841440A24340FE600D14205 /* my_config.h */,
+				6841440B24340FE600D14205 /* my_thread_local.h */,
+				6841440C24340FE600D14205 /* keycache.h */,
+				6841440D24340FE600D14205 /* binary_log_types.h */,
+				6841440E24340FE600D14205 /* mysqld_ername.h */,
+				6841440F24340FE600D14205 /* m_ctype.h */,
+				6841441024340FE600D14205 /* big_endian.h */,
+				6841441124340FE600D14205 /* my_global.h */,
+				6841441224340FE600D14205 /* little_endian.h */,
+				6841441324340FE600D14205 /* thr_cond.h */,
+				6841441424340FE600D14205 /* mysql_version.h */,
+				6841441524340FE600D14205 /* sslopt-vars.h */,
+				6841441624340FE600D14205 /* my_getopt.h */,
+				6841441724340FE600D14205 /* decimal.h */,
+				6841441824340FE600D14205 /* sslopt-case.h */,
+				6841441924340FE600D14205 /* m_string.h */,
+				6841441A24340FE600D14205 /* mysql_time.h */,
+				6841441B24340FE600D14205 /* my_thread.h */,
+				6841441C24340FE600D14205 /* my_list.h */,
+				6841441D24340FE600D14205 /* sslopt-longopts.h */,
+				6841441E24340FE600D14205 /* typelib.h */,
+				6841441F24340FE600D14205 /* mysql_com.h */,
+				6841442024340FE600D14205 /* mysql */,
+				6841443A24340FE600D14205 /* my_dir.h */,
+				6841443B24340FE600D14205 /* thr_mutex.h */,
+				6841443C24340FE600D14205 /* mysql.h */,
+				6841443D24340FE600D14205 /* my_xml.h */,
+				6841443E24340FE600D14205 /* sql_common.h */,
+				6841443F24340FE600D14205 /* my_alloc.h */,
+				6841444024340FE600D14205 /* byte_order_generic_x86.h */,
+				6841444124340FE600D14205 /* mysqld_error.h */,
+				6841444224340FE600D14205 /* my_compiler.h */,
+				6841444324340FE600D14205 /* my_sys.h */,
+				6841444424340FE600D14205 /* sql_state.h */,
+				6841444524340FE600D14205 /* my_dbug.h */,
+				6841444624340FE600D14205 /* errmsg.h */,
+				6841444724340FE600D14205 /* mysql_embed.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		6841442024340FE600D14205 /* mysql */ = {
+			isa = PBXGroup;
+			children = (
+				6841442124340FE600D14205 /* mysql_lex_string.h */,
+				6841442224340FE600D14205 /* service_mysql_alloc.h */,
+				6841442324340FE600D14205 /* plugin_auth_common.h */,
+				6841442424340FE600D14205 /* plugin_trace.h */,
+				6841442524340FE600D14205 /* get_password.h */,
+				6841442624340FE600D14205 /* service_my_snprintf.h */,
+				6841442724340FE600D14205 /* client_plugin.h.pp */,
+				6841442824340FE600D14205 /* client_plugin.h */,
+				6841442924340FE600D14205 /* psi */,
+				6841443924340FE600D14205 /* client_authentication.h */,
+			);
+			path = mysql;
+			sourceTree = "<group>";
+		};
+		6841442924340FE600D14205 /* psi */ = {
+			isa = PBXGroup;
+			children = (
+				6841442A24340FE600D14205 /* mysql_ps.h */,
+				6841442B24340FE600D14205 /* mysql_transaction.h */,
+				6841442C24340FE600D14205 /* mysql_file.h */,
+				6841442D24340FE600D14205 /* mysql_idle.h */,
+				6841442E24340FE600D14205 /* psi.h */,
+				6841442F24340FE600D14205 /* mysql_stage.h */,
+				6841443024340FE600D14205 /* mysql_table.h */,
+				6841443124340FE600D14205 /* psi_memory.h */,
+				6841443224340FE600D14205 /* psi_base.h */,
+				6841443324340FE600D14205 /* mysql_socket.h */,
+				6841443424340FE600D14205 /* mysql_sp.h */,
+				6841443524340FE600D14205 /* mysql_statement.h */,
+				6841443624340FE600D14205 /* mysql_thread.h */,
+				6841443724340FE600D14205 /* mysql_memory.h */,
+				6841443824340FE600D14205 /* mysql_mdl.h */,
+			);
+			path = psi;
+			sourceTree = "<group>";
+		};
+		6841444824340FE600D14205 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				6841444924340FE600D14205 /* libmysqlclient.a */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		6841444A24340FE600D14205 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				6841444B24340FE600D14205 /* libmysqlclient.a */,
+			);
+			path = mac;
+			sourceTree = "<group>";
+		};
+		6841444C24340FE600D14205 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6841444D24340FE600D14205 /* NSString+OHSerialization.m */,
+				6841444E24340FE600D14205 /* NSString+Utility.m */,
+				6841444F24340FE600D14205 /* NSString+Escaping.h */,
+				6841445024340FE600D14205 /* NSData+OHSerialization.h */,
+				6841445124340FE600D14205 /* NSNumber+OHSerialization.h */,
+				6841445224340FE600D14205 /* NSObject+Mapping.m */,
+				6841445324340FE600D14205 /* NSString+Escaping.m */,
+				6841445424340FE600D14205 /* NSString+Utility.h */,
+				6841445524340FE600D14205 /* NSString+OHSerialization.h */,
+				6841445624340FE600D14205 /* NSData+OHSerialization.m */,
+				6841445724340FE600D14205 /* NSNumber+OHSerialization.m */,
+				6841445824340FE600D14205 /* NSObject+Mapping.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		68756B0C238FB95E0030E144 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68756B0D238FB95E0030E144 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68315ABA238FB42C005D889A /* OHMySQLDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68315AE7238FB42E005D889A /* Build configuration list for PBXNativeTarget "OHMySQLDemo" */;
+			buildPhases = (
+				68315AB7238FB42C005D889A /* Sources */,
+				68315AB8238FB42C005D889A /* Frameworks */,
+				68315AB9238FB42C005D889A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OHMySQLDemo;
+			productName = OHMySQLDemo;
+			productReference = 68315ABB238FB42C005D889A /* OHMySQLDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68315AD2238FB42E005D889A /* OHMySQLDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68315AEA238FB42E005D889A /* Build configuration list for PBXNativeTarget "OHMySQLDemoTests" */;
+			buildPhases = (
+				68315ACF238FB42E005D889A /* Sources */,
+				68315AD0238FB42E005D889A /* Frameworks */,
+				68315AD1238FB42E005D889A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68315AD5238FB42E005D889A /* PBXTargetDependency */,
+			);
+			name = OHMySQLDemoTests;
+			productName = OHMySQLDemoTests;
+			productReference = 68315AD3238FB42E005D889A /* OHMySQLDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		68315ADD238FB42E005D889A /* OHMySQLDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68315AED238FB42E005D889A /* Build configuration list for PBXNativeTarget "OHMySQLDemoUITests" */;
+			buildPhases = (
+				68315ADA238FB42E005D889A /* Sources */,
+				68315ADB238FB42E005D889A /* Frameworks */,
+				68315ADC238FB42E005D889A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68315AE0238FB42E005D889A /* PBXTargetDependency */,
+			);
+			name = OHMySQLDemoUITests;
+			productName = OHMySQLDemoUITests;
+			productReference = 68315ADE238FB42E005D889A /* OHMySQLDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68315AB3238FB42C005D889A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Bryant Reyn";
+				TargetAttributes = {
+					68315ABA238FB42C005D889A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					68315AD2238FB42E005D889A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 68315ABA238FB42C005D889A;
+					};
+					68315ADD238FB42E005D889A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 68315ABA238FB42C005D889A;
+					};
+				};
+			};
+			buildConfigurationList = 68315AB6238FB42C005D889A /* Build configuration list for PBXProject "OHMySQLDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68315AB2238FB42C005D889A;
+			productRefGroup = 68315ABC238FB42C005D889A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68315ABA238FB42C005D889A /* OHMySQLDemo */,
+				68315AD2238FB42E005D889A /* OHMySQLDemoTests */,
+				68315ADD238FB42E005D889A /* OHMySQLDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68315AB9238FB42C005D889A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68315ACB238FB42E005D889A /* LaunchScreen.storyboard in Resources */,
+				68315AC8238FB42E005D889A /* Assets.xcassets in Resources */,
+				68315AC6238FB42C005D889A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68315AD1238FB42E005D889A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68315ADC238FB42E005D889A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68315AB7238FB42C005D889A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6841445E24340FE600D14205 /* OHSSLConfig.m in Sources */,
+				6841446C24340FE600D14205 /* NSData+OHSerialization.m in Sources */,
+				6841445D24340FE600D14205 /* OHJoinConstants.m in Sources */,
+				6841446A24340FE600D14205 /* NSObject+Mapping.m in Sources */,
+				6841446B24340FE600D14205 /* NSString+Escaping.m in Sources */,
+				68756B11238FBFB40030E144 /* BankDict.m in Sources */,
+				6841446524340FE600D14205 /* client_plugin.h.pp in Sources */,
+				6841446324340FE600D14205 /* OHMySQLContainer.m in Sources */,
+				68315AC3238FB42C005D889A /* ViewController.m in Sources */,
+				6841446424340FE600D14205 /* OHMySQLStoreCoordinator.m in Sources */,
+				6841446124340FE600D14205 /* OHMySQLTimeline.m in Sources */,
+				68315ACE238FB42E005D889A /* main.m in Sources */,
+				6841446824340FE600D14205 /* NSString+OHSerialization.m in Sources */,
+				6841446924340FE600D14205 /* NSString+Utility.m in Sources */,
+				6841445B24340FE600D14205 /* OHMySQLQueryRequestFactory.m in Sources */,
+				68315AC0238FB42C005D889A /* AppDelegate.m in Sources */,
+				6841446224340FE600D14205 /* OHMySQLQueryRequest.m in Sources */,
+				6841446024340FE600D14205 /* OHMySQLUser.m in Sources */,
+				6841445C24340FE600D14205 /* OHCharsetEncoding.m in Sources */,
+				6841446D24340FE600D14205 /* NSNumber+OHSerialization.m in Sources */,
+				6841446E24340FE600D14205 /* OHMySQLSerialization.m in Sources */,
+				6841445A24340FE600D14205 /* OHMySQLQueryContext.m in Sources */,
+				6841445F24340FE600D14205 /* OHMySQLStore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68315ACF238FB42E005D889A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68315AD8238FB42E005D889A /* OHMySQLDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68315ADA238FB42E005D889A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68315AE3238FB42E005D889A /* OHMySQLDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68315AD5238FB42E005D889A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68315ABA238FB42C005D889A /* OHMySQLDemo */;
+			targetProxy = 68315AD4238FB42E005D889A /* PBXContainerItemProxy */;
+		};
+		68315AE0238FB42E005D889A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68315ABA238FB42C005D889A /* OHMySQLDemo */;
+			targetProxy = 68315ADF238FB42E005D889A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68315AC4238FB42C005D889A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68315AC5238FB42C005D889A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68315AC9238FB42E005D889A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68315ACA238FB42E005D889A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68315AE5238FB42E005D889A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		68315AE6238FB42E005D889A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68315AE8238FB42E005D889A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OHMySQLDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OHMySQLDemo/OHMySQL/lib/ios",
+					"$(PROJECT_DIR)/OHMySQLDemo/OHMySQL/lib/mac",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.crimsonresearch.OHMySQLDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68315AE9238FB42E005D889A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OHMySQLDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OHMySQLDemo/OHMySQL/lib/ios",
+					"$(PROJECT_DIR)/OHMySQLDemo/OHMySQL/lib/mac",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.crimsonresearch.OHMySQLDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68315AEB238FB42E005D889A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OHMySQLDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.crimsonresearch.OHMySQLDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OHMySQLDemo.app/OHMySQLDemo";
+			};
+			name = Debug;
+		};
+		68315AEC238FB42E005D889A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OHMySQLDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.crimsonresearch.OHMySQLDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OHMySQLDemo.app/OHMySQLDemo";
+			};
+			name = Release;
+		};
+		68315AEE238FB42E005D889A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OHMySQLDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.crimsonresearch.OHMySQLDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OHMySQLDemo;
+			};
+			name = Debug;
+		};
+		68315AEF238FB42E005D889A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OHMySQLDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.crimsonresearch.OHMySQLDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OHMySQLDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68315AB6238FB42C005D889A /* Build configuration list for PBXProject "OHMySQLDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68315AE5238FB42E005D889A /* Debug */,
+				68315AE6238FB42E005D889A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68315AE7238FB42E005D889A /* Build configuration list for PBXNativeTarget "OHMySQLDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68315AE8238FB42E005D889A /* Debug */,
+				68315AE9238FB42E005D889A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68315AEA238FB42E005D889A /* Build configuration list for PBXNativeTarget "OHMySQLDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68315AEB238FB42E005D889A /* Debug */,
+				68315AEC238FB42E005D889A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68315AED238FB42E005D889A /* Build configuration list for PBXNativeTarget "OHMySQLDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68315AEE238FB42E005D889A /* Debug */,
+				68315AEF238FB42E005D889A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68315AB3238FB42C005D889A /* Project object */;
+}
